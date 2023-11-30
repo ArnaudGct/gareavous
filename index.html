@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Gare à vous !</title>
 </head>
 
@@ -16,7 +16,7 @@
                 <img src="./assets/img/logo.png" alt="">
                 <div class="title_content-header">
                     <h1>Bienvenue sur Gare à vous !</h1>
-                    <p>L’application qui vous donne des chiffres</p>
+                    <p>LA SNCF en quelques chiffres</p>
                 </div>
             </div>
             <div class="btn_burger-header">
@@ -24,19 +24,95 @@
             </div>
         </div>
         <nav class="nav_content-header">
+            <div class="btn_close-header">
+                <i class="fi fi-br-cross-small"></i>
+            </div>
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">La carte de restauration</a></li>
+                <li><a href="">La poropreté des gares</a></li>
+                <li><a href="">Autre</a></li>
             </ul>
         </nav>
         <div class="background-header"></div>
     </header>
 
-    <main>
+    <main class="main-global">
 
+        <div style="height:2rem"></div>
+
+        <div class="container_articles-index">
+            <article class="article-index">
+                <div class="content_article-index">
+                    <div class="title_content_article-header">
+                        <p>Nombre de voyageurs moyen</p>
+                        <p>Entre 2000 et 2019</p>
+                    </div>
+                    <div class="number_content_article-header">
+                        <p>3 millions de voyageurs</p>
+                    </div>
+                </div>
+                <div class="illustration_article-index">
+                    <img src="./assets/img/travelers-rafiki-1.svg" alt="">
+                </div>
+            </article>
+
+            <article class="article-index">
+                <div class="content_article-index">
+                    <div class="title_content_article-header">
+                        <p>Nombre de voyageurs moyen</p>
+                        <p>Entre 2000 et 2019</p>
+                    </div>
+                    <div class="number_content_article-header">
+                        <p>3 millions de voyageurs</p>
+                    </div>
+                </div>
+                <div class="illustration_article-index">
+                    <img src="./assets/img/travelers-rafiki-1.svg" alt="">
+                </div>
+            </article>
+
+            <article class="article-index">
+                <div class="content_article-index">
+                    <div class="title_content_article-header">
+                        <p>Nombre de voyageurs moyen</p>
+                        <p>Entre 2000 et 2019</p>
+                    </div>
+                    <div class="number_content_article-header">
+                        <p>3 millions de voyageurs</p>
+                    </div>
+                </div>
+                <div class="illustration_article-index">
+                    <img src="./assets/img/travelers-rafiki-1.svg" alt="">
+                </div>
+            </article>
+        </div>
+
+        <div style="height:2rem"></div>
+
+        <div class="title_trait-global">
+            <h2>Découvre d'autres chiffres</h2>
+            <div></div>
+        </div>
     </main>
+
+
+<script>
+    const btn_burger = document.querySelector('.btn_burger-header');
+    const btn_close = document.querySelector('.btn_close-header');
+    const nav = document.querySelector('.nav_content-header');
+    const background = document.querySelector('.background-header');
+
+    btn_burger.addEventListener('click', () => {
+        nav.classList.add('active');
+        background.classList.add('active');
+    });
+
+    btn_close.addEventListener('click', () => {
+        nav.classList.remove('active');
+        background.classList.remove('active');
+    });
+</script>
 
 </body>
 
