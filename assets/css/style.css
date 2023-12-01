@@ -263,11 +263,129 @@ a{
 
 
 
+.container_articles_others_numbers-index{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0 1.25rem;
+    padding-bottom: 1.5625rem;
+
+    overflow-x: scroll;
+}
+
+.article_others_numbers-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+
+    padding: 1.25rem;
+    border-radius: 0.875rem;
+    background: #0084D4;
+}
+
+.illustration_article_others_numbers-index img{
+    width: 6.625rem;
+    height: auto;
+}
+
+.title_article_others_numbers-index p{
+    color: #FFF;
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btn_voirplus-index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+
+    width: 90%;
+    padding: .3125rem 0;
+    border-radius: 0.4375rem;
+    background: #00205B;
+    box-shadow: 2px 2px 0px 0px rgba(0, 32, 91, 0.25);
+}
+
+.btn_voirplus-index p{
+    color: #FFF;
+    text-align: center;
+    font-size: 0.6875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
 
 
 
+/* FOOTER */
 
+.footer-global{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .9375rem;
+
+    width: 100%;
+    padding: 1.25rem 0;
+    background: #00205B;
+}
+
+.footer-global p{
+    color: #FFF;
+    text-align: center;
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.content_footer-global{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+}
+
+.content_footer-global img{
+    width: 1.6875rem;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.content_footer-global p:nth-child(1){
+    color: #FFF;
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.content_footer-global p:nth-child(2){
+    color: #FFF;
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-global a{
+    color: #FFF;
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
 
 
 
